@@ -3,11 +3,17 @@ body{
     margin: 0px;
 }
 
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
 .desktop_nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 15% 10px 8%;
     background-color: white;
     font-family: Karla;
     text-transform: uppercase;
@@ -34,14 +40,22 @@ body{
 
 .hero{
     /* background-color: hsl(256, 26%, 20%); */
-    background: linear-gradient(180deg, hsl(256, 26%, 20%) 80%, #ffffff 20%);
+    background: linear-gradient(180deg, hsl(256, 26%, 20%) 70%, #ffffff 30%);
     color: white;
-    padding: 5% 10% 0% 10%;
+    padding: 5% 12% 0% 7%;
+    height: 100vh;
+    /* position: relative; */
 }
 
 .hero_line{
     border: 1px solid white;
     width: 22%;
+}
+
+.hero_line2{
+    border: 2px solid hsl(273, 4%, 51%);
+    width: 10%;
+    margin-left: 7%;
 }
 
 .hero_btn{
@@ -57,10 +71,26 @@ body{
     font-family: DM Serif Display;
     font-weight: 400;
     font-size: 60px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .hero_img img{
-    width: 80%;
+    width: 93%;
     height: 80vh;
+}
+
+.bg_pattern_right{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 35% !important;
+    height: 70vh;
+}
+
+.bg_pattern_left{
+    position: absolute;
+    top: 62%;
+    left: 0px;
+    width: 10% !important;
+    height: 50vh;
 }
