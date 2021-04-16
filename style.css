@@ -1,0 +1,41 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.desktop_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.desktop_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desktop_list span{
+    padding: 3px 10px 3px 10px;
+    margin-left: 5px;
+}
+
+.desktop_list button{
+    padding: 3px 15px 3px 15px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.hero{
+    background-color: hsl(228, 45%, 44%);
+    color: white;
+}
+
+.hero_line{
+    border: 1px solid white;
+    width: 30%;
+}
