@@ -211,12 +211,11 @@ header {
         margin: 0px !important;
     }
     .hero_btn {
-        padding: 10px 15px 10px 15px;
+        padding: 10px 30px 10px 30px;
         background-color: inherit;
         border: 2px solid white;
         font-weight: 500;
         color: white;
-        width: 40% !important;
         margin-top: 0px !important;
     }
     .hero_title {
@@ -236,6 +235,7 @@ header {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        position: relative;
         margin: 0px !important;
     }
     .hero_img .mobile_image {
@@ -254,15 +254,66 @@ header {
     .bg_mobile_left {
         display: block;
         position: absolute;
-        top: 70vh;
+        top: 0px;
         left: 0px;
         width: 40% !important;
     }
-    /* .bg_mobile_right {
+    .bg_mobile_right {
         display: block;
         position: absolute;
-        top: 70vh;
-        left: 0px;
-        width: 40% !important;
-    } */
+        bottom: -39%;
+        right: 0px;
+        width: 30% !important;
+        height: 50vh;
+    }
+    .mid {
+        padding: 25% 7% 25% 7%;
+        /* height: 120vh; */
+        display: block;
+        /* flex-direction: column; */
+        /* justify-content: space-evenly; */
+        text-align: center;
+        height: 100%;
+    }
+    .card {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+    .mid_block {
+        background-color: hsl(256, 26%, 20%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        padding: 20% 7% 20% 7%;
+        position: relative;
+        z-index: 1;
+        /* overflow: visible; */
+    }
+    .mid h1 {
+        font-family: DM Serif Display;
+        font-size: 45px;
+        padding: 0px !important;
+        margin: 0px;
+        margin-bottom: 15%;
+    }
+    .mid_block .hero_btn {
+        margin-top: 5vh !important;
+
+    }
+    .mid_pattern {
+        position: absolute;
+        right: 0px;
+        display: none;
+    }
+    .hero_line2 {
+        /* border: 2px solid hsl(273, 4%, 51%); */
+        width: 45vw;
+        margin: auto;
+        margin-bottom: 15%;
+    }
 }
