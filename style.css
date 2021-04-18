@@ -97,6 +97,10 @@ header {
 
 .mid{
     padding: 0px 7% 0px 7%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .card-img-top {
@@ -109,4 +113,58 @@ header {
 
 .card {
     border: none !important;
+}
+
+.mid_block{
+    background-color: hsl(256, 26%, 20%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 3% 7% 3% 7%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mid h1{
+    font-family: DM Serif Display;
+    font-size: 3.125rem;
+}
+
+.mid_block .hero_btn{
+    margin-top: 0px;
+}
+
+.mid_pattern{
+    position: absolute;
+    right: 0px;
+}
+
+.footer{
+    background-color: hsl(0, 0%, 98%);
+    padding: 3% 8% 2% 8%;
+    position: relative;
+}
+
+.footer_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.list_title{
+    margin-bottom: 20px;
+}
+
+.bg-pattern-footer-desktop{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 35%;
+    height: 60%;
 }
