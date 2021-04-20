@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15% 10px 8%;
+    padding: 10px 8% 10px 8%;
     background-color: white;
     font-family: Karla;
     text-transform: uppercase;
@@ -50,7 +50,10 @@ header {
     background-color: black;
 }
 
-.mobile_nav_btn, .mobile_menu {
+.mobile_menu {
+    display: none;
+}
+.mobile_nav_btn{
     display: none !important;
 }
 
@@ -66,12 +69,14 @@ header {
 .hero_line {
     border: 1px solid white;
     width: 22%;
+    background-color: white;
 }
 
 .hero_line2 {
-    border: 2px solid hsl(273, 4%, 51%);
+    border: 1px solid hsl(273, 4%, 51%);
     width: 10%;
-    margin-left: 7%;
+    background-color: hsl(273, 4%, 51%);
+    /* margin-left: 7%; */
 }
 
 .hero_btn {
@@ -203,10 +208,12 @@ header {
 
 .footer ul {
     list-style: none;
+    font-size: 14px;
 }
 
 .list_title {
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .bg-pattern-footer-desktop {
@@ -221,7 +228,7 @@ header {
     display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     header {
         position: sticky;
         top: 0px;
@@ -230,6 +237,9 @@ header {
     }
     .desktop_list {
         display: none;
+    }
+    .mobile_nav_btn{
+        display: block !important;
     }
     
     .mobile_menu {
@@ -249,7 +259,7 @@ header {
     .open {
         display: flex;
         position: fixed;
-        top: 8vh;
+        top: 55px;
         left: 0px;
         transition: 2s;
         animation-name: efx;
