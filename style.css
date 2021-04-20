@@ -393,8 +393,12 @@ header {
         padding: 20% 7% 20% 7%;
         position: relative;
         z-index: 0;
-        /* overflow: visible; */
     }
+    .mid_block .hero_btn:hover {
+        color: hsl(256, 26%, 20%);
+        background-color: #fff;
+    }
+    
     .mid h1 {
         font-family: DM Serif Display;
         font-size: 45px;
@@ -410,6 +414,7 @@ header {
         position: absolute;
         top: 0px;
         right: 0px;
+        z-index: -1;
     }
     .hero_line2 {
         /* border: 2px solid hsl(273, 4%, 51%); */
