@@ -229,7 +229,28 @@ header {
     display: none;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1070px) {
+    body {
+        width: 100%;
+    }
+    .hero {
+        background: linear-gradient(180deg, hsl(256, 26%, 20%) 70%, #ffffff 30%);
+        color: white;
+        padding: 5% 2% 0% 2%;
+        height: 100vh;
+        font-size: 16px;
+        font-family: karla;
+    }
+    .hero_img {
+        padding: 0px !important;
+    }
+    .hero_img .desktop_image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (width: 1024px) {
     body {
         width: 100%;
     }
@@ -264,6 +285,13 @@ header {
         left: 0px;
         width: 10% !important;
         height: 30vh;
+    }
+}
+
+@media (min-width: 801px){
+    .col-md-12{
+        flex: 0 0;
+        flex-basis: 50% !important;
     }
 }
 
@@ -461,7 +489,13 @@ header {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) and (min-width: 576px){
+    .col-md-12{
+        flex: 1 0 auto !important;
+    }
+}
+
+@media (max-width: 767px) {
     .footer {
         text-align: center;
         text-transform: uppercase;
